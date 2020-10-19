@@ -48,7 +48,7 @@ if __name__== '__main__' :
         try:
             user_attempt = int(user_input)
             result = guess_machine.guess(user_attempt)
-            if result == 'found'
+            if result == 'found' :
                 print('Fantastic, you coud find the number I had in mind in %d attempts!'% guess_machine.number_of_attempt)
                 break
             else:
