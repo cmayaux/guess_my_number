@@ -12,7 +12,6 @@ It'll adapt min and max values to match GuessMachine answers'
 
 """
 
-import random
 from guess_my_number import MIN,MAX,GuessMachine
 
 if __name__=='__main_':
@@ -20,7 +19,7 @@ if __name__=='__main_':
     max = MAX
     guess_machine= GuessMachine()
     while True:
-        attempt= random.randint(min,max)
+        attempt= int((min +max)/2)
         result = guess_machine.guess(attempt)
         print('tried %d : %s' % (attempt,result))
         if result == 'found' :
